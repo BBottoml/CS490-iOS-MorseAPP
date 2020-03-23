@@ -1,2 +1,2 @@
-# CS490-iOS-MorseAPP
-CS490 - Project Morse APP
+# CS490-iOS- mors. 
+CS490 - mors.

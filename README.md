@@ -24,15 +24,14 @@ mors. is an app that allows users to learn morse code through conversation.
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
-* User can register for an account
-* User can log into an account
 * User can send a message in morse 
 * User can see the translation of their message
 * User can receive a message in morse
 * User can receive a ':)' everytime they get something correct
 
 **Optional Nice-to-have Stories**
+* User can register for an account
+* User can log into an account
 * User can progress through levels (e.g., beginner, intermediate, expert)
     * User can see a timer letting them know how much time they have left 
 * User can chat with another person in english and/or morse 
@@ -41,7 +40,7 @@ mors. is an app that allows users to learn morse code through conversation.
 ### 2. Screen Archetypes
 
 * Register
-   * User can register for an account
+  * User can register for an account
 * Login
    * User can log into an account
 * Creation
@@ -64,9 +63,9 @@ Remark: Tab Navigation not reflected in wireframe since we may opt to implement 
 
 **Flow Navigation** (Screen to Screen)
 * Register screen -> Home screen
-   * User can register and be redirected to home screen 
+  * User can register and be redirected to home screen 
 * Login screen -> Home screen
-   * User can be redirected to home screen
+  * User can be redirected to home screen
 * Home screen -> Creation screen
    * User can send a message in morse
 * Home screen -> Creation or chatting screen
@@ -81,8 +80,8 @@ Remark: Tab Navigation not reflected in wireframe since we may opt to implement 
    * User can enter their desired message in morse
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+<img src="https://i.imgur.com/eEsZQES.png" width=600>
 ![](https://i.imgur.com/eEsZQES.png)
 
 
@@ -92,9 +91,29 @@ Remark: Tab Navigation not reflected in wireframe since we may opt to implement 
 
 ## Schema 
 [This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+
+Post
+| Property            | Type   | Description |
+| --------    | ------- | ------ |
+| chatMessage         | char   | retrieving user's message    |
+| randomMessage       | String | user enters game response |
+| username            | String | username corresponding to account |
+| userPassword        | String | password corresponding to user's account |
+| score               | Number | score pertaining to game |
+| picture             | Image  | user profile picture |
+| difficultyLevel     | Number | number indicating whether user is beginner, intermediate, or expert|
+
 ### Networking
-- [Add list of network requests by screen ]
+- Home ChatScreen
+    - (READ/GET) user's messages
+    - (READ/GET) user's username + password
+    - (READ/GET) user's picture
+    - (READ/GET) user's score
+    - (READ/GET) user's difficulty level 
+- Third part API 
+    - (READ/GET) api.funtranslations.com/translate/
+    
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

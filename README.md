@@ -116,4 +116,5 @@ Post
     - (READ/GET) api.funtranslations.com/translate/
     
 - [Create basic snippets for each Parse network request]
+Remark: not using parse
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

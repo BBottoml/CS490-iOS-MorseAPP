@@ -125,6 +125,6 @@ Video:
 <img src='http://g.recordit.co/ars7GTN6o9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Completed user stories:
-- [ ] User can view homescreen 
-- [ ] User can write a message in morse
+- [x] User can view homescreen 
+- [x] User can write a message in morse
 

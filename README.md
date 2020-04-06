@@ -118,3 +118,13 @@ Post
 - [Create basic snippets for each Parse network request]
 Remark: not using parse
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+### Build Sprint 1
+Video:
+
+<img src='http://g.recordit.co/ars7GTN6o9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Completed user stories:
+- [ ] User can view homescreen 
+- [ ] User can write a message in morse
+

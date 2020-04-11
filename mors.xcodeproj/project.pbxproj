@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C4057105243AA783009798AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4057104243AA783009798AD /* HomeViewController.swift */; };
 		C4057107243AA84B009798AD /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4057106243AA84B009798AD /* WriteViewController.swift */; };
+		C47F0D562442366600E83341 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F0D552442366600E83341 /* TutorialViewController.swift */; };
 		C4F94B9B243AA1820034E3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94B9A243AA1820034E3CA /* AppDelegate.swift */; };
 		C4F94B9D243AA1820034E3CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94B9C243AA1820034E3CA /* SceneDelegate.swift */; };
 		C4F94B9F243AA1820034E3CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94B9E243AA1820034E3CA /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		C4057104243AA783009798AD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4057106243AA84B009798AD /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		C47F0D552442366600E83341 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		C4F94B97243AA1820034E3CA /* mors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F94B9A243AA1820034E3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F94B9C243AA1820034E3CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				C4F94BA8243AA1860034E3CA /* Info.plist */,
 				C4057104243AA783009798AD /* HomeViewController.swift */,
 				C4057106243AA84B009798AD /* WriteViewController.swift */,
+				C47F0D552442366600E83341 /* TutorialViewController.swift */,
 			);
 			path = mors;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				C4F94B9B243AA1820034E3CA /* AppDelegate.swift in Sources */,
 				C4F94B9D243AA1820034E3CA /* SceneDelegate.swift in Sources */,
 				C4057107243AA84B009798AD /* WriteViewController.swift in Sources */,
+				C47F0D562442366600E83341 /* TutorialViewController.swift in Sources */,
 				C4057105243AA783009798AD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,15 @@ import UIKit
 
 class WriteViewController: UIViewController {
 
+    @IBOutlet weak var textFieldSubmit: UITextField!
+    
+    @IBOutlet weak var outPutLabel: UILabel!
+    
+    @IBAction func submitPrint(_ sender: Any) {
+        let name: String = textFieldSubmit.text!
+        outPutLabel.text = name
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

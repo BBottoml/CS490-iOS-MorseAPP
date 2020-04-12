@@ -5,6 +5,9 @@
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+2. [Unit 10](#Unit-10)
+2. [Unit 11](#Unit-11)
+
 
 ## Overview
 ### Description
@@ -119,7 +122,7 @@ Post
 Remark: not using parse
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
-### Build Sprint 1
+## Unit 10
 Video:
 
 <img src='http://g.recordit.co/ars7GTN6o9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
@@ -127,4 +130,13 @@ Video:
 Completed user stories:
 - [x] User can view homescreen 
 - [x] User can write a message in morse
+
+## Unit 11
+Video:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Required user stories:
+- [ ] User can view dictionary screen
+- [ ] User can intitiate a tutorial game and generates random phrase 
 

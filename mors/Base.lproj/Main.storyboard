@@ -7,6 +7,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="TZ0-Jr-s75">
+            <objects>
+                <viewController id="IN3-oA-45d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wxR-Dr-Efj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dictionary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We2-aA-PYN">
+                                <rect key="frame" x="58" y="18" width="267" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="mors" translatesAutoresizingMaskIntoConstraints="NO" id="5Mh-3R-tmQ">
+                                <rect key="frame" x="-649" y="-731" width="631" height="950"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="mors" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-Kg-4IS">
+                                <rect key="frame" x="8" y="40" width="367" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8S3-a2-hS9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2L2-2m-5su" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692" y="-603.14842578710648"/>
+        </scene>
         <!--Home-->
         <scene sceneID="McI-oq-boP">
             <objects>
@@ -73,7 +105,11 @@
                         <viewLayoutGuide key="safeArea" id="BQw-Jr-9xc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="oPG-kQ-JZS">
-                        <barButtonItem key="leftBarButtonItem" title="Dictionary" id="6uw-OJ-2PN"/>
+                        <barButtonItem key="leftBarButtonItem" title="Dictionary" id="6uw-OJ-2PN">
+                            <connections>
+                                <segue destination="IN3-oA-45d" kind="presentation" id="psJ-bl-rSJ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Write" id="mgu-JD-OaC">
                             <connections>
                                 <segue destination="9vS-b0-Z4x" kind="presentation" id="WSK-7l-h8N"/>
@@ -83,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIf-b8-39d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1692" y="139"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="JAC-vJ-qLc">
@@ -225,4 +261,7 @@
         </scene>
     </scenes>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="mors" width="1200" height="1547"/>
+    </resources>
 </document>

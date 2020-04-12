@@ -134,7 +134,7 @@ Completed user stories:
 ## Unit 11
 Video:
 
-<img src='https://recordit.co/IkwfiT6szz' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/IkwfiT6szz.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Required user stories:
 - [X] User can view dictionary screen

@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gHg-Zu-jwq">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gHg-Zu-jwq">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="9pP-Kg-4Qv">
+            <objects>
+                <navigationController id="k9M-Sc-FYD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PFt-66-n5T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IN3-oA-45d" kind="relationship" relationship="rootViewController" id="k69-Dz-ZPh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8R-BJ-WOb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="-707"/>
+        </scene>
+        <!--Dictionary-->
         <scene sceneID="TZ0-Jr-s75">
             <objects>
                 <viewController id="IN3-oA-45d" sceneMemberID="viewController">
@@ -19,22 +32,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dictionary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We2-aA-PYN">
-                                <rect key="frame" x="58" y="18" width="267" height="72"/>
+                                <rect key="frame" x="54" y="56" width="267" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="mors" translatesAutoresizingMaskIntoConstraints="NO" id="5Mh-3R-tmQ">
-                                <rect key="frame" x="-649" y="-731" width="631" height="950"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="mors" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-Kg-4IS">
-                                <rect key="frame" x="8" y="40" width="367" height="607"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4u-0a-DPx">
-                                <rect key="frame" x="96" y="84" width="183" height="21"/>
+                                <rect key="frame" x="95" y="123" width="183" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">———————————
 ————</string>
@@ -42,14 +47,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="mors" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-Kg-4IS">
+                                <rect key="frame" x="7" y="136" width="359" height="519"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="8S3-a2-hS9"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Dictionary" id="pK2-Le-Nxi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2L2-2m-5su" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="-603.14842578710648"/>
+            <point key="canvasLocation" x="2077.5999999999999" y="-707.49625187406298"/>
         </scene>
         <!--Home-->
         <scene sceneID="McI-oq-boP">
@@ -119,10 +129,10 @@
                     <navigationItem key="navigationItem" title="Home" id="oPG-kQ-JZS">
                         <barButtonItem key="leftBarButtonItem" title="Dictionary" id="6uw-OJ-2PN">
                             <connections>
-                                <segue destination="IN3-oA-45d" kind="presentation" id="psJ-bl-rSJ"/>
+                                <segue destination="k9M-Sc-FYD" kind="presentation" id="tUb-9q-GBJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Write" id="mgu-JD-OaC">
+                        <barButtonItem key="rightBarButtonItem" title="Translate" id="mgu-JD-OaC">
                             <connections>
                                 <segue destination="9vS-b0-Z4x" kind="presentation" id="WSK-7l-h8N"/>
                             </connections>
@@ -209,25 +219,25 @@
         <!--Navigation Controller-->
         <scene sceneID="Y0N-0D-UCe">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIl-xE-3Bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="9vS-b0-Z4x" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PGP-CA-A5x">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
                         <segue destination="El4-kX-pXC" kind="relationship" relationship="rootViewController" id="inm-2q-9W6"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zIl-xE-3Bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2498" y="139"/>
         </scene>
-        <!--Write-->
+        <!--Translate-->
         <scene sceneID="lNe-W0-bh3">
             <objects>
                 <viewController id="El4-kX-pXC" customClass="WriteViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hth-1A-NpA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M81-Eb-4OM">
@@ -292,7 +302,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="83I-NN-NKy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Write" id="IZo-ec-iLm"/>
+                    <navigationItem key="navigationItem" title="Translate" id="IZo-ec-iLm"/>
                     <connections>
                         <outlet property="outPutLabel" destination="lBn-kl-Fqv" id="lOy-aS-e12"/>
                         <outlet property="textFieldSubmit" destination="M81-Eb-4OM" id="H7X-tQ-3ze"/>
@@ -307,7 +317,7 @@
             <objects>
                 <navigationController id="gHg-Zu-jwq" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dd4-lg-s1a">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

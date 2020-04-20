@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "appicc.png",
+      "filename" : "icons8-horizontal-line-16.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Screen Shot 2020-04-19 at 10.21.19 PM.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

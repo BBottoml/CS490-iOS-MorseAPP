@@ -12,7 +12,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        englishToMorse(content: "Morse code is a dit and dah")
+        let morse = englishToMorse(content: "Morse code is a dit and dah")
+        let english = morseToEnglish(content: "-- --- .-. ... .     -.-. --- -.. .     .. ...     .-     -.. .. -     .- -. -..     -.. .- .... ")
         // Do any additional setup after loading the view.
     }
     

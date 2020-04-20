@@ -31,14 +31,20 @@ import Foundation
         let task = session.dataTask(with: request) { data, response, error in
             if let error = error {
                print(error.localizedDescription)
+               translatedText = "error"
             } else if let data = data {
-               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: [])
+               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
 
                // TODO: Get the array of movies
                 print("here2")
                 // print(dataDictionary)
+                let contents = dataDictionary["contents"] as! [String:Any]
+                let morse = contents["translated"] as! String
+                translatedText = morse
+                print("Morse:")
+                print(translatedText)
                 
-                print(dataDictionary)
+                
                 //translatedText = (dataDictionary["contents"]["translated"])as! String
                // TODO: Store the movies in a property to use elsewhere
                // TODO: Reload your table view data
@@ -48,9 +54,59 @@ import Foundation
             
         }
         task.resume()
+        
         return translatedText
+    }
+
+func morseToEnglish(content: String) -> String {
+    
+    print("here1")
+    
+    let url = URL(string: "http://api.funtranslations.com/translate/morse2english.json")!
+    var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+    let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+
+    
+    request.httpMethod = "POST"
+    request.setValue("wto6C8WdT436rZ7CfDOy0AeF", forHTTPHeaderField: "X-Funtranslations-Api-Secret")
+    
+    let parameters: [String: Any] = [
+        "text": content
+    ]
+    
+    request.httpBody = parameters.percentEncoded()
+    
+    
+    var translatedText = content
+    let task = session.dataTask(with: request) { data, response, error in
+        if let error = error {
+           print(error.localizedDescription)
+           translatedText = "error"
+        } else if let data = data {
+           let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
+
+           // TODO: Get the array of movies
+            print("here2")
+            // print(dataDictionary)
+            let contents = dataDictionary["contents"] as! [String:Any]
+            let morse = contents["translated"] as! String
+            translatedText = morse
+            print("Enmglish:")
+            print(translatedText)
+            
+            
+            //translatedText = (dataDictionary["contents"]["translated"])as! String
+           // TODO: Store the movies in a property to use elsewhere
+           // TODO: Reload your table view data
+
+        }
+        print("here3")
         
     }
+    task.resume()
+    
+    return translatedText
+}
 
 extension Dictionary {
     func percentEncoded() -> Data? {

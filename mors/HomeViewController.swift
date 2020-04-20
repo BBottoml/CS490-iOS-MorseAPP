@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        englishToMorse(content: "Morse code is a dit and dah")
         // Do any additional setup after loading the view.
     }
     

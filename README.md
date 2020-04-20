@@ -7,6 +7,8 @@
 2. [Schema](#Schema)
 2. [Unit 10](#Unit-10)
 2. [Unit 11](#Unit-11)
+2. [Unit 12](#Unit-12)
+
 
 
 ## Overview
@@ -139,4 +141,13 @@ Video:
 Required user stories:
 - [X] User can view dictionary screen
 - [X] User can intitiate a tutorial game and generates random phrase 
+
+## Unit 12
+Video:
+
+<img src='http://g.recordit.co/9oPPedZknN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Required user stories:
+- [X] User can navigate seamlessly
+- [X] User can enter text that is then sent to API endpoint 
 

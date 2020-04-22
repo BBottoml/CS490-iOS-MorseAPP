@@ -358,6 +358,7 @@
                     <navigationItem key="navigationItem" title="Translate" id="IZo-ec-iLm"/>
                     <connections>
                         <outlet property="outPutLabel" destination="lBn-kl-Fqv" id="lOy-aS-e12"/>
+                        <outlet property="outputInMorse" destination="TJv-zt-r4Y" id="7gi-Xn-K1q"/>
                         <outlet property="textFieldSubmit" destination="M81-Eb-4OM" id="H7X-tQ-3ze"/>
                     </connections>
                 </viewController>

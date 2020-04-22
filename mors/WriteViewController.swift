@@ -14,14 +14,20 @@ class WriteViewController: UIViewController {
     
     @IBOutlet weak var outPutLabel: UILabel!
     
+    @IBOutlet weak var outputInMorse: UILabel!
+    
     @IBAction func submitPrint(_ sender: Any) {
         let name: String = textFieldSubmit.text!
         outPutLabel.text = name
         
+        englishToMorse(content: name, success: { (morse) in
+            self.outputInMorse.text = morse;
+        })
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // Do any additional setup after loading the view.
     }
     

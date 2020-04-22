@@ -8,7 +8,7 @@
 
 import Foundation
 
-    func englishToMorse(content: String) -> String {
+    func englishToMorse(content: String, success: @escaping (String) -> ()) {
         
         print("here1")
         
@@ -41,6 +41,7 @@ import Foundation
                 let contents = dataDictionary["contents"] as! [String:Any]
                 let morse = contents["translated"] as! String
                 translatedText = morse
+                success(translatedText)
                 print("Morse:")
                 print(translatedText)
                 
@@ -55,7 +56,6 @@ import Foundation
         }
         task.resume()
         
-        return translatedText
     }
 
 func morseToEnglish(content: String) -> String {

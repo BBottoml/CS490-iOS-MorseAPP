@@ -10,7 +10,7 @@ import Foundation
 
     func englishToMorse(content: String, success: @escaping (String) -> ()) {
         
-        print("here1")
+
         
         let url = URL(string: "https://api.funtranslations.com/translate/morse.json")!
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -51,7 +51,7 @@ import Foundation
                // TODO: Reload your table view data
 
             }
-            print("here3")
+
             
         }
         task.resume()
@@ -100,7 +100,7 @@ func morseToEnglish(content: String) -> String {
            // TODO: Reload your table view data
 
         }
-        print("here3")
+
         
     }
     task.resume()

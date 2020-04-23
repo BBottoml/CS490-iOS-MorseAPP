@@ -10,7 +10,11 @@ import UIKit
 
 class EasyViewController: UIViewController {
 
+    @IBOutlet weak var correctTranslation: UILabel!
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var phraseLabel: UILabel!
+    @IBOutlet weak var textFieldSubmit: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,10 +22,33 @@ class EasyViewController: UIViewController {
         "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
         "s", "t", "u", "v", "w", "x", "y", "z"]
         phraseLabel.text = chars.randomElement()!
+        resultLabel.isHidden = !resultLabel.isHidden
+        correctTranslation.isHidden = true
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func onSubmit(_ sender: Any) {
+        let textFieldText: String = textFieldSubmit.text!
+        let phrase: String = phraseLabel.text!
+        
+        englishToMorse(content: phrase, success: { (morse) in
+            
+            let trimmed = morse.trimmingCharacters(in: .whitespacesAndNewlines)
 
+            if textFieldText == trimmed {
+                self.correctTranslation.isHidden = true
+                
+            }
+            else {
+                self.resultLabel.text = "Incorrect!"
+                self.correctTranslation.text = "Enter the following to proceed: " + trimmed
+                self.correctTranslation.isHidden = false
+            }
+            self.resultLabel.isHidden = false
+        })
+    }
+    
     /*
     // MARK: - Navigation
 

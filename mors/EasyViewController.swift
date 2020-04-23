@@ -10,23 +10,25 @@ import UIKit
 
 class EasyViewController: UIViewController {
 
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var correctTranslation: UILabel!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var phraseLabel: UILabel!
     @IBOutlet weak var textFieldSubmit: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
+    
+    let chars = ["a", "b", "c", "d", "e", "f", "g",
+    "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
+    "s", "t", "u", "v", "w", "x", "y", "z"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let chars = ["a", "b", "c", "d", "e", "f", "g",
-        "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
-        "s", "t", "u", "v", "w", "x", "y", "z"]
         phraseLabel.text = chars.randomElement()!
-        resultLabel.isHidden = !resultLabel.isHidden
+        resultLabel.isHidden = true
         correctTranslation.isHidden = true
         // Do any additional setup after loading the view.
     }
-    
     
     @IBAction func onSubmit(_ sender: Any) {
         let textFieldText: String = textFieldSubmit.text!
@@ -48,6 +50,14 @@ class EasyViewController: UIViewController {
             }
             self.resultLabel.isHidden = false
         })
+    }
+    
+    
+    @IBAction func onNextButton(_ sender: Any) {
+        self.textFieldSubmit.text = ""
+        self.phraseLabel.text = self.chars.randomElement()!
+        self.correctTranslation.isHidden = true
+        self.resultLabel.isHidden = true
     }
     
     /*

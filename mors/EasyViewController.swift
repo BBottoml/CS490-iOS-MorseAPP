@@ -38,6 +38,7 @@ class EasyViewController: UIViewController {
 
             if textFieldText == trimmed {
                 self.correctTranslation.isHidden = true
+                self.resultLabel.text = "Correct!"
                 
             }
             else {

@@ -14,6 +14,7 @@
 		C4A80F06245102E500AA12E7 /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A80F05245102E500AA12E7 /* EasyViewController.swift */; };
 		C4A80F08245102F100AA12E7 /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A80F07245102F100AA12E7 /* MediumViewController.swift */; };
 		C4A80F0A245102F900AA12E7 /* HardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A80F09245102F900AA12E7 /* HardViewController.swift */; };
+		C4A80F0C245119CE00AA12E7 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */; };
 		C4F94B9B243AA1820034E3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94B9A243AA1820034E3CA /* AppDelegate.swift */; };
 		C4F94B9D243AA1820034E3CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94B9C243AA1820034E3CA /* SceneDelegate.swift */; };
 		C4F94B9F243AA1820034E3CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94B9E243AA1820034E3CA /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		C4A80F05245102E500AA12E7 /* EasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViewController.swift; sourceTree = "<group>"; };
 		C4A80F07245102F100AA12E7 /* MediumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
 		C4A80F09245102F900AA12E7 /* HardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardViewController.swift; sourceTree = "<group>"; };
+		C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		C4F94B97243AA1820034E3CA /* mors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F94B9A243AA1820034E3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F94B9C243AA1820034E3CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				C4A80F05245102E500AA12E7 /* EasyViewController.swift */,
 				C4A80F07245102F100AA12E7 /* MediumViewController.swift */,
 				C4A80F09245102F900AA12E7 /* HardViewController.swift */,
+				C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */,
 			);
 			path = mors;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				C4F94B9F243AA1820034E3CA /* ViewController.swift in Sources */,
 				C4F94B9B243AA1820034E3CA /* AppDelegate.swift in Sources */,
 				C425A5E2244BDFF5001F31A1 /* MorseAPICaller.swift in Sources */,
+				C4A80F0C245119CE00AA12E7 /* DictionaryViewController.swift in Sources */,
 				C4A80F0A245102F900AA12E7 /* HardViewController.swift in Sources */,
 				C4F94B9D243AA1820034E3CA /* SceneDelegate.swift in Sources */,
 				C4A80F06245102E500AA12E7 /* EasyViewController.swift in Sources */,

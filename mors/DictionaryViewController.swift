@@ -12,17 +12,15 @@ class DictionaryViewController: UIViewController {
 
     @IBOutlet weak var labelA: UILabel!
     
-    @IBOutlet weak var imageView: UIView!
-    
     @IBOutlet weak var labelB: UILabel!
     
-    @IBAction func updateA(_ sender: UITapGestureRecognizer) {
-
-
+    @IBOutlet weak var imageView: UIView!
+    
+    @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
         labelA.fadeIn()
         labelA.fadeOut()
-        labelB.fadeIn()
-        labelB.fadeOut()
+
+
         
         if(imageView != nil) {
         imageView.fadeOut(completion: {
@@ -34,13 +32,12 @@ class DictionaryViewController: UIViewController {
             (finished: Bool) -> Void in
             self.labelA.text = ".-"
             self.labelB.text = "-..."
+
         })
         } else {
             self.labelA.text = "A"
-            self.labelB.text = "B"
             print("no bueno")
         }
-    
         
     }
     

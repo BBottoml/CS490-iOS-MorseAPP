@@ -118,7 +118,9 @@ class GameViewController: UIViewController {
         
     
     var counter = 0
+    var timesOfSubmit = 0
     @IBAction func onSubmit(_ sender: Any) {
+        
         let TextField: String = TextFieldText.text!
         let Phrase: String = PhraseLabel.text!
         

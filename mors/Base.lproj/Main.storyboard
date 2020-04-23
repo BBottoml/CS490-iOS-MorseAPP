@@ -10,6 +10,7 @@
         <!--Dictionary-->
         <scene sceneID="TZ0-Jr-s75">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2L2-2m-5su" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="IN3-oA-45d" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wxR-Dr-Efj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -41,7 +42,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dictionary" id="pK2-Le-Nxi"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2L2-2m-5su" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1153" y="-644"/>
         </scene>
@@ -534,6 +534,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSubmit:" destination="1Vc-xn-6dW" eventType="touchUpInside" id="iNk-T1-xdg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phrase: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyK-eR-O23">
                                 <rect key="frame" x="30" y="235" width="121" height="41"/>
@@ -556,18 +559,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IN/Correct:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys5-ra-B7M">
+                                <rect key="frame" x="30" y="481" width="168" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incorrect" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N5-Xa-9Nq">
+                                <rect key="frame" x="30" y="521" width="329" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="a4g-cx-hgr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Practice" id="z62-SD-U1J"/>
                     <connections>
+                        <outlet property="correctTranslation" destination="9N5-Xa-9Nq" id="FQl-yo-D9R"/>
                         <outlet property="phraseLabel" destination="VWf-P5-5Td" id="bCu-Z5-2AA"/>
+                        <outlet property="resultLabel" destination="ys5-ra-B7M" id="JVb-R6-5z8"/>
+                        <outlet property="submitButton" destination="ywq-fP-Gmd" id="sA3-Oi-60d"/>
+                        <outlet property="textFieldSubmit" destination="xTt-s1-gec" id="a94-CA-hPS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNq-jS-1eo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433" y="1670"/>
+            <point key="canvasLocation" x="-434.39999999999998" y="1669.1154422788607"/>
         </scene>
         <!--Practice-->
         <scene sceneID="xof-LI-egx">

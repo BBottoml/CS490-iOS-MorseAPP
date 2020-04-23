@@ -9,11 +9,8 @@
 import UIKit
 
 class DictionaryViewController: UIViewController {
-
+    
     @IBOutlet weak var labelA: UILabel!
-    
-    @IBOutlet weak var labelB: UILabel!
-    
     @IBOutlet weak var imageView: UIView!
     
     @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
@@ -31,8 +28,6 @@ class DictionaryViewController: UIViewController {
         labelA.fadeIn(completion: {
             (finished: Bool) -> Void in
             self.labelA.text = ".-"
-            self.labelB.text = "-..."
-
         })
         } else {
             self.labelA.text = "A"

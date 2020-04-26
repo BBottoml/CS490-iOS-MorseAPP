@@ -13,6 +13,8 @@ class DictionaryViewController: UIViewController {
     @IBOutlet weak var labelB: UILabel!
     @IBOutlet weak var labelA: UILabel!
     @IBOutlet weak var imageView: UIView!
+    var globalBool = false
+    
     
        /* guard sender.view != nil else { return }
         
@@ -43,7 +45,9 @@ class DictionaryViewController: UIViewController {
     }
     
     @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
-
+        if (globalBool == false) {
+        labelA.fadeIn()
+        labelA.fadeOut()
 
 
         labelA.fadeOut(completion: {
@@ -65,8 +69,24 @@ class DictionaryViewController: UIViewController {
             self.labelB.text = "-.\n---\n.--.\n--.-\n.-.\n...\n-\n..-\n...-\n.--\n-..-\n-.--\n--.."
         })
         
-    
-    
+        globalBool = true
+        }
+        else {
+            labelA.fadeIn()
+            labelA.fadeOut()
+
+
+            labelA.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = ""
+            })
+
+            labelA.fadeIn(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = "A"
+            })
+            globalBool = false
+        }
         }
     
         

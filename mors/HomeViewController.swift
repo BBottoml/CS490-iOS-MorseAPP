@@ -11,7 +11,10 @@ import UIKit
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
         super.viewDidLoad()
+
         englishToMorse(content: "Morse code is a dit and dah", success: { (morse) in
             print(morse)
         })

@@ -62,9 +62,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dictionary" id="pK2-Le-Nxi"/>
                     <connections>
+                        <outlet property="dictTitle" destination="We2-aA-PYN" id="noe-Lv-VUy"/>
                         <outlet property="imageView" destination="Rha-0F-qfB" id="jtv-jK-fV7"/>
                         <outlet property="labelA" destination="CbV-Bg-qOS" id="ZQu-Om-JHZ"/>
                         <outlet property="labelB" destination="jtH-dV-HZV" id="dmI-C3-0c0"/>
+                        <outlet property="lineLine" destination="M4u-0a-DPx" id="5hc-ol-IZN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2L2-2m-5su" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

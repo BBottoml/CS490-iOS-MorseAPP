@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gHg-Zu-jwq">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -265,6 +265,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="endGame:" destination="UMl-bs-WTC" eventType="touchUpInside" id="dV4-4u-fzP"/>
+                                    <action selector="onSubmit:" destination="UMl-bs-WTC" eventType="touchUpInside" id="guw-KG-JJl"/>
                                     <segue destination="pem-hn-rUo" kind="showDetail" id="q76-r2-9iE"/>
                                 </connections>
                             </button>
@@ -277,6 +279,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="lol:" destination="UMl-bs-WTC" eventType="touchUpInside" id="Rdy-b2-8UM"/>
                                     <action selector="onSubmit:" destination="UMl-bs-WTC" eventType="touchUpInside" id="lxS-Pn-UmI"/>
                                 </connections>
                             </button>
@@ -289,17 +292,18 @@
                         <outlet property="EndGameButton" destination="YZK-VM-cd2" id="c28-jo-nrL"/>
                         <outlet property="PhraseLabel" destination="stm-Gj-C0w" id="oer-f7-5kj"/>
                         <outlet property="TextFieldText" destination="j0w-sS-o9P" id="i5f-OP-p5o"/>
-                        <outlet property="submitButton" destination="zht-Nu-95f" id="6MV-1e-M7W"/>
+                        <outlet property="endGameButton" destination="YZK-VM-cd2" id="eBX-tM-6rl"/>
+                        <outlet property="submitButton" destination="zht-Nu-95f" id="LIE-eW-m6t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7E-H9-8cb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2176.8000000000002" y="884.70764617691157"/>
         </scene>
-        <!--View Controller-->
+        <!--Total Score View Controller-->
         <scene sceneID="kOs-26-Uqs">
             <objects>
-                <viewController id="pem-hn-rUo" sceneMemberID="viewController">
+                <viewController id="pem-hn-rUo" customClass="TotalScoreViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="axp-Of-e3m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,16 +325,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUB-D5-ey3">
-                                <rect key="frame" x="151" y="289" width="74" height="37"/>
+                                <rect key="frame" x="151" y="305" width="74" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FZ-NG-Gb7">
-                                <rect key="frame" x="151" y="358" width="74" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FZ-NG-Gb7">
+                                <rect key="frame" x="162" y="358" width="53" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfM-c8-ht3">
+                                <rect key="frame" x="150" y="338" width="0.0" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">
+———</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="————" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWj-42-m8D">
+                                <rect key="frame" x="158" y="340" width="189" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -339,6 +359,10 @@
                         <viewLayoutGuide key="safeArea" id="wh4-1J-7m3"/>
                     </view>
                     <navigationItem key="navigationItem" id="OaZ-9D-g8u"/>
+                    <connections>
+                        <outlet property="gameScore" destination="nUB-D5-ey3" id="GoK-sB-hxf"/>
+                        <outlet property="onCompletion" destination="nUB-D5-ey3" id="zFV-Up-wWt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43a-Zc-aKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

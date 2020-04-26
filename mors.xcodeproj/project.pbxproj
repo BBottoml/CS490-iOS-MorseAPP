@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A22998092451498A00AB6693 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22998082451498A00AB6693 /* GameViewController.swift */; };
+		A229980B245647F800AB6693 /* TotalScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229980A245647F800AB6693 /* TotalScoreViewController.swift */; };
 		C4057105243AA783009798AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4057104243AA783009798AD /* HomeViewController.swift */; };
 		C4057107243AA84B009798AD /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4057106243AA84B009798AD /* WriteViewController.swift */; };
 		C425A5E2244BDFF5001F31A1 /* MorseAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425A5E1244BDFF5001F31A1 /* MorseAPICaller.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		A22998082451498A00AB6693 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A229980A245647F800AB6693 /* TotalScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalScoreViewController.swift; sourceTree = "<group>"; };
 		C4057104243AA783009798AD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4057106243AA84B009798AD /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		C425A5E1244BDFF5001F31A1 /* MorseAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseAPICaller.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				C4A80F09245102F900AA12E7 /* HardViewController.swift */,
 				C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */,
 				A22998082451498A00AB6693 /* GameViewController.swift */,
+				A229980A245647F800AB6693 /* TotalScoreViewController.swift */,
 			);
 			path = mors;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A229980B245647F800AB6693 /* TotalScoreViewController.swift in Sources */,
 				C4F94B9F243AA1820034E3CA /* ViewController.swift in Sources */,
 				C4F94B9B243AA1820034E3CA /* AppDelegate.swift in Sources */,
 				C425A5E2244BDFF5001F31A1 /* MorseAPICaller.swift in Sources */,

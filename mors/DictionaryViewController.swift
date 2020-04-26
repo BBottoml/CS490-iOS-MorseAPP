@@ -10,10 +10,9 @@ import UIKit
 
 class DictionaryViewController: UIViewController {
     
+    @IBOutlet weak var labelB: UILabel!
     @IBOutlet weak var labelA: UILabel!
     @IBOutlet weak var imageView: UIView!
-    
-    
     
        /* guard sender.view != nil else { return }
         
@@ -35,26 +34,43 @@ class DictionaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.labelA.numberOfLines = 0
+        self.labelB.numberOfLines = 0
+        self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM"
+        self.labelB.text = "O\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n"
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
-        labelA.fadeIn()
-        labelA.fadeOut()
+
 
 
         labelA.fadeOut(completion: {
             (finished: Bool) -> Void in
             self.labelA.text = ""
         })
+        labelB.fadeOut(completion: {
+            (finished: Bool) -> Void in
+            self.labelA.text = ""
+        })
 
         labelA.fadeIn(completion: {
             (finished: Bool) -> Void in
-            self.labelA.text = ".-"
+            self.labelA.text = ".-\n-...\n-.-.\n-..\n.\n..-.\n--.\n....\n..\n.---\n-.-\n.-..\n--"
         })
-        }
         
-    }
+        labelB.fadeIn(completion: {
+            (finished: Bool) -> Void in
+            self.labelB.text = "-.\n---\n.--.\n--.-\n.-.\n...\n-\n..-\n...-\n.--\n-..-\n-.--\n--.."
+        })
+        
+    
+    
+        }
+    
+        
+}
     
 
     /*

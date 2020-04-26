@@ -45,6 +45,9 @@ class DictionaryViewController: UIViewController {
     }
     
     @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
+        labelA.fadeIn()
+        labelA.fadeOut()
+        
         if (globalBool == false) {
     
             labelA.fadeOut(completion: {
@@ -53,7 +56,7 @@ class DictionaryViewController: UIViewController {
             })
             labelB.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = ""
+                self.labelB.text = ""
             })
 
             labelA.fadeIn(completion: {
@@ -77,7 +80,7 @@ class DictionaryViewController: UIViewController {
             
             labelB.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = ""
+                self.labelB.text = ""
             })
 
             labelA.fadeIn(completion: {
@@ -110,12 +113,12 @@ class DictionaryViewController: UIViewController {
 
 extension UIView {
 
-    func fadeIn(_ duration: TimeInterval = 1.5, delay: TimeInterval = 0.2, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+    func fadeIn(_ duration: TimeInterval = 1.5, delay: TimeInterval = 1, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
         UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 1.0
     }, completion: completion)  }
 
-    func fadeOut(_ duration: TimeInterval = 1.5, delay: TimeInterval = 0.2, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+    func fadeOut(_ duration: TimeInterval = 1.5, delay: TimeInterval = 1, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
         UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 1.0
     }, completion: completion)

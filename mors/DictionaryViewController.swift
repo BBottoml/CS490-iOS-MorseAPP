@@ -46,44 +46,48 @@ class DictionaryViewController: UIViewController {
     
     @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
         if (globalBool == false) {
-        labelA.fadeIn()
-        labelA.fadeOut()
-
-
-        labelA.fadeOut(completion: {
-            (finished: Bool) -> Void in
-            self.labelA.text = ""
-        })
-        labelB.fadeOut(completion: {
-            (finished: Bool) -> Void in
-            self.labelA.text = ""
-        })
-
-        labelA.fadeIn(completion: {
-            (finished: Bool) -> Void in
-            self.labelA.text = ".-\n-...\n-.-.\n-..\n.\n..-.\n--.\n....\n..\n.---\n-.-\n.-..\n--"
-        })
-        
-        labelB.fadeIn(completion: {
-            (finished: Bool) -> Void in
-            self.labelB.text = "-.\n---\n.--.\n--.-\n.-.\n...\n-\n..-\n...-\n.--\n-..-\n-.--\n--.."
-        })
-        
-        globalBool = true
-        }
-        else {
-            labelA.fadeIn()
-            labelA.fadeOut()
-
-
+    
             labelA.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = ""
+            })
+            labelB.fadeOut(completion: {
                 (finished: Bool) -> Void in
                 self.labelA.text = ""
             })
 
             labelA.fadeIn(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = "A"
+                self.labelA.text = ".-\n-...\n-.-.\n-..\n.\n..-.\n--.\n....\n..\n.---\n-.-\n.-..\n--"
+            })
+            
+            labelB.fadeIn(completion: {
+                (finished: Bool) -> Void in
+                self.labelB.text = "-.\n---\n.--.\n--.-\n.-.\n...\n-\n..-\n...-\n.--\n-..-\n-.--\n--.."
+            })
+            
+            globalBool = true
+        }
+        else {
+
+            labelA.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = ""
+            })
+            
+            labelB.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = ""
+            })
+
+            labelA.fadeIn(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM"
+            })
+            
+            labelB.fadeIn(completion: {
+                (finished: Bool) -> Void in
+                self.labelB.text = "O\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n"
             })
             globalBool = false
         }

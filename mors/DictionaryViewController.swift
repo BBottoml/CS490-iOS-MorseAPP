@@ -13,29 +13,6 @@ class DictionaryViewController: UIViewController {
     @IBOutlet weak var labelA: UILabel!
     @IBOutlet weak var imageView: UIView!
     
-    @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
-        labelA.fadeIn()
-        labelA.fadeOut()
-
-
-        
-        if(imageView != nil) {
-        imageView.fadeOut(completion: {
-            (finished: Bool) -> Void in
-            self.imageView.removeFromSuperview()
-        })
-
-        labelA.fadeIn(completion: {
-            (finished: Bool) -> Void in
-            self.labelA.text = ".-"
-        })
-        } else {
-            self.labelA.text = "A"
-            print("no bueno")
-        }
-        
-    }
-    
     
     
        /* guard sender.view != nil else { return }
@@ -61,6 +38,24 @@ class DictionaryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
+        labelA.fadeIn()
+        labelA.fadeOut()
+
+
+        labelA.fadeOut(completion: {
+            (finished: Bool) -> Void in
+            self.labelA.text = ""
+        })
+
+        labelA.fadeIn(completion: {
+            (finished: Bool) -> Void in
+            self.labelA.text = ".-"
+        })
+        }
+        
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -72,7 +67,6 @@ class DictionaryViewController: UIViewController {
     }
     */
 
-}
 
 extension UIView {
 

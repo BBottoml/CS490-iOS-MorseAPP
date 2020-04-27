@@ -26,6 +26,8 @@
 		C4F94BB2243AA1860034E3CA /* morsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94BB1243AA1860034E3CA /* morsTests.swift */; };
 		C4F94BBD243AA1860034E3CA /* morsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94BBC243AA1860034E3CA /* morsUITests.swift */; };
 		CE101B932456782F003306B0 /* FinalScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE101B922456782F003306B0 /* FinalScoreViewController.swift */; };
+		CE101B992456A479003306B0 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE101B982456A479003306B0 /* GifViewController.swift */; };
+		CE101B9B2456A659003306B0 /* hexagonMorse.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE101B9A2456A659003306B0 /* hexagonMorse.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		C4F94BBC243AA1860034E3CA /* morsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morsUITests.swift; sourceTree = "<group>"; };
 		C4F94BBE243AA1860034E3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE101B922456782F003306B0 /* FinalScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreViewController.swift; sourceTree = "<group>"; };
+		CE101B982456A479003306B0 /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		CE101B9A2456A659003306B0 /* hexagonMorse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hexagonMorse.gif; path = ../../hexagonMorse.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 				A22998082451498A00AB6693 /* GameViewController.swift */,
 				CE101B922456782F003306B0 /* FinalScoreViewController.swift */,
 				C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */,
+				CE101B9A2456A659003306B0 /* hexagonMorse.gif */,
+				CE101B982456A479003306B0 /* GifViewController.swift */,
 			);
 			path = mors;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE101B9B2456A659003306B0 /* hexagonMorse.gif in Resources */,
 				C4F94BA7243AA1860034E3CA /* LaunchScreen.storyboard in Resources */,
 				C4F94BA4243AA1860034E3CA /* Assets.xcassets in Resources */,
 				C4F94BA2243AA1820034E3CA /* Main.storyboard in Resources */,
@@ -302,6 +309,7 @@
 				C4A80F0A245102F900AA12E7 /* HardViewController.swift in Sources */,
 				C4F94B9D243AA1820034E3CA /* SceneDelegate.swift in Sources */,
 				C4A80F06245102E500AA12E7 /* EasyViewController.swift in Sources */,
+				CE101B992456A479003306B0 /* GifViewController.swift in Sources */,
 				C4057107243AA84B009798AD /* WriteViewController.swift in Sources */,
 				C47F0D562442366600E83341 /* TutorialViewController.swift in Sources */,
 				C4057105243AA783009798AD /* HomeViewController.swift in Sources */,

@@ -11,134 +11,213 @@ import UIKit
 class GameViewController: UIViewController {
 
     
-    @IBOutlet weak var submitButton: UIButton!
+    
+    // stuff for total score
+    @IBOutlet weak var dashTwo: UILabel!
+    @IBOutlet weak var dashOne: UILabel!
+    @IBOutlet weak var oneHundred: UILabel!
+    @IBOutlet weak var score: UILabel!
+    @IBOutlet weak var totalScoreDash: UILabel!
+    @IBOutlet weak var totalScoreLabel: UILabel!
+    
+    
     @IBOutlet weak var PhraseLabel: UILabel!
-    @IBOutlet weak var EndGameButton: UIButton!
     @IBOutlet weak var TextFieldText: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
+    
+    
+    let chars = ["a", "b", "c", "d", "e", "f", "g",
+           "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
+           "s", "t", "u", "v", "w", "x", "y", "z", "people",
+           "history",
+           "way",
+           "art",
+           "world",
+           "information",
+           "map",
+           "two",
+           "family",
+           "government",
+           "health",
+           "system",
+           "computer",
+           "meat",
+           "year",
+           "thanks",
+           "music",
+           "person",
+           "reading",
+           "method",
+           "data",
+           "food",
+           "understanding",
+           "theory",
+           "law",
+           "bird",
+           "literature",
+           "problem",
+           "software",
+           "control",
+           "knowledge",
+           "power",
+           "ability",
+           "economics",
+           "love",
+           "internet",
+           "television",
+           "science",
+           "library",
+           "nature",
+           "fact",
+           "product",
+           "idea",
+           "temperature",
+           "investment",
+           "area",
+           "society",
+           "activity",
+           "story",
+           "industry",
+           "media",
+           "thing",
+           "oven",
+           "community",
+           "definition",
+           "safety",
+           "quality",
+           "development",
+           "language",
+           "management",
+           "player",
+           "variety",
+           "video",
+           "week",
+           "security",
+           "country",
+           "exam",
+           "movie",
+           "organization",
+           "equipment",
+           "physics",
+           "analysis",
+           "policy",
+           "series",
+           "thought",
+           "basis",
+           "boyfriend",
+           "direction",
+           "strategy",
+           "technology",
+           "army",
+           "camera",
+           "freedom",
+           "paper",
+           "environment",
+           "child",
+           "instance",
+           "month",
+           "truth"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let chars = ["a", "b", "c", "d", "e", "f", "g",
-        "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
-        "s", "t", "u", "v", "w", "x", "y", "z", "people",
-        "history",
-        "way",
-        "art",
-        "world",
-        "information",
-        "map",
-        "two",
-        "family",
-        "government",
-        "health",
-        "system",
-        "computer",
-        "meat",
-        "year",
-        "thanks",
-        "music",
-        "person",
-        "reading",
-        "method",
-        "data",
-        "food",
-        "understanding",
-        "theory",
-        "law",
-        "bird",
-        "literature",
-        "problem",
-        "software",
-        "control",
-        "knowledge",
-        "power",
-        "ability",
-        "economics",
-        "love",
-        "internet",
-        "television",
-        "science",
-        "library",
-        "nature",
-        "fact",
-        "product",
-        "idea",
-        "temperature",
-        "investment",
-        "area",
-        "society",
-        "activity",
-        "story",
-        "industry",
-        "media",
-        "thing",
-        "oven",
-        "community",
-        "definition",
-        "safety",
-        "quality",
-        "development",
-        "language",
-        "management",
-        "player",
-        "variety",
-        "video",
-        "week",
-        "security",
-        "country",
-        "exam",
-        "movie",
-        "organization",
-        "equipment",
-        "physics",
-        "analysis",
-        "policy",
-        "series",
-        "thought",
-        "basis",
-        "boyfriend",
-        "direction",
-        "strategy",
-        "technology",
-        "army",
-        "camera",
-        "freedom",
-        "paper",
-        "environment",
-        "child",
-        "instance",
-        "month",
-        "truth",
-        "marketing", "According to all known laws", "there is no way a bee", "Barry I told you", "Those were awkward", "please welcome Dean Buzzwell", "Keep your hands and antennas", "that every small job", "One job forever", "Unless you are wearing it", "He had a paw on my throat", "six miles from here tomorrow", "we have got the sunflower patch", "This is Blue Leader", "We have roses visual", "Bring it around 30 degrees and hold", "It smells good", "Ooming in at you like a missile", "Why does his life have", "I could really get in trouble", "How should I start it", "This is a bit of a surprise to me"]
+        self.dashOne.isHidden = true
+        self.dashTwo.isHidden = true
+        self.oneHundred.isHidden = true
+        self.score.isHidden = true
+        self.totalScoreDash.isHidden = true
+        self.totalScoreLabel.isHidden = true
+       
         
         PhraseLabel.text = chars.randomElement()!
       
     }
         
-    
+
     var counter = 0
-    var timesOfSubmit = 0
+    var questionNumber = 0
+
     @IBAction func onSubmit(_ sender: Any) {
+        questionNumber+=1
         
         let TextField: String = TextFieldText.text!
         let Phrase: String = PhraseLabel.text!
-        
+      
         englishToMorse(content: Phrase, success: { (morse) in
-                
-                let trimmed = morse.trimmingCharacters(in: .whitespacesAndNewlines)
+              
+              let trimmed = morse.trimmingCharacters(in: .whitespacesAndNewlines)
 
-                if TextField == trimmed {
-                    self.counter += 10
-                    
-                }
-                else {
-                    self.counter += 0
-                }
-                
-            })
+              if TextField == trimmed {
+                  self.counter += 10
+              }
+          
+          self.TextFieldText.text = ""
+          self.PhraseLabel.text = self.chars.randomElement()!
+        })
         
+        if questionNumber == 10 {
+            self.submitButton.isHidden = true 
+        
+            
+            self.score.text = String(self.counter)
+            
+            self.dashOne.isHidden = false
+            self.dashTwo.isHidden = false
+            self.oneHundred.isHidden = false
+            self.score.isHidden = false
+            self.totalScoreDash.isHidden = false
+            self.totalScoreLabel.isHidden = false
+        }
     }
+    
+        
+      
+           
+    
+        /*
+        func viewWillAppear(animated: Bool){
+            if self.buttonChange <= 9{
+                self.submitButton.isHidden = false
+            }
+            else if self.buttonChange == 10{
+            self.submitButton.isHidden = true
+            }
+            
+        }
+ */
+        /*
+        var score = 0
+        func finalScore(){
+            englishToMorse(content: Phrase, success: { (morse) in
+            
+            let trimmed = morse.trimmingCharacters(in: .whitespacesAndNewlines)
+
+            if TextField == trimmed {
+                score += 10
+                }
+            else{
+                score += 0
+                }
+            
+        })
+ */
+        
+        
+        
+        
+        
+        
+       // func buttonAction(_ sender: AnyObject){
+        //    if buttonChange >= 10{
+                
+        //    }
+        //}
+        
+
+        
+
     
     /*
     // MARK: - Navigation

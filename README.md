@@ -151,3 +151,14 @@ Required user stories:
 - [X] User can navigate seamlessly
 - [X] User can enter text that is then sent to API endpoint 
 
+## Unit 13 
+Video: 
+
+Remark: You may have to click through in order to access to gif 
+<img src='http://g.recordit.co/BsVQN7KwU2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+Required user stories:
+- [X] User can play the game
+- [X] User can access the dictionary (not shown in video...but is completely animated)
+

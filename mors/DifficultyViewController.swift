@@ -10,10 +10,9 @@ import UIKit
 
 class DifficultyViewController: UIViewController {
 
-    
     @IBOutlet weak var easyButton: UIButton!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //navigationController?.navigationBar.barTintColor = UIColor.black

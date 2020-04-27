@@ -271,6 +271,9 @@
                         <viewLayoutGuide key="safeArea" id="fdZ-tu-aEf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Difficulty" id="FsJ-IE-tOv"/>
+                    <connections>
+                        <outlet property="easyButton" destination="vbe-QY-tv4" id="J5h-Xg-rbV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ie-HB-skB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -955,7 +958,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="gWA-Cc-Hud"/>
-        <segue reference="zet-Xz-8vW"/>
+        <segue reference="W8w-Z0-JAK"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

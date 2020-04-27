@@ -138,7 +138,7 @@ class GameViewController: UIViewController {
         
 
     var counter = 0
-    var questionNumber = 0
+    var questionNumber = 1
     var stringCounter = ""
     @IBAction func onSubmit(_ sender: Any) {
         questionNumber+=1
@@ -149,18 +149,20 @@ class GameViewController: UIViewController {
         englishToMorse(content: Phrase, success: { (morse) in
               
               let trimmed = morse.trimmingCharacters(in: .whitespacesAndNewlines)
-
+              
+            self.displayCountLabel.text = String(self.questionNumber)
+            
               if TextField == trimmed {
                   self.counter += 10
                   print("bueno")
-                self.displayCountLabel.text = String(self.counter)
+                  print(String(self.counter))
               }
           
           self.TextFieldText.text = ""
           self.PhraseLabel.text = self.chars.randomElement()!
         })
         
-        if questionNumber == 10 {
+        if questionNumber == 11 {
             stringCounter = String(counter)
             performSegue(withIdentifier: "scoreSegue", sender: self)
             //self.submitButton.isHidden = true

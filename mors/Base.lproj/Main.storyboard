@@ -271,6 +271,9 @@
                         <viewLayoutGuide key="safeArea" id="fdZ-tu-aEf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Difficulty" id="FsJ-IE-tOv"/>
+                    <connections>
+                        <outlet property="easyButton" destination="vbe-QY-tv4" id="a8R-fd-GPD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ie-HB-skB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -501,7 +504,6 @@
         <!--Translate-->
         <scene sceneID="lNe-W0-bh3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eJV-Xa-Q3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="El4-kX-pXC" customClass="WriteViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hth-1A-NpA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -599,6 +601,7 @@
                         <outlet property="someTextField" destination="Daa-uA-AqA" id="hsC-th-Qa8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJV-Xa-Q3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3569" y="139"/>
         </scene>
@@ -942,7 +945,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HzH-g6-Wfc"/>
+        <segue reference="W8w-Z0-JAK"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

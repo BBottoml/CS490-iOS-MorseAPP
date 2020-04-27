@@ -10,10 +10,16 @@ import UIKit
 
 class DifficultyViewController: UIViewController {
 
+    
+    @IBOutlet weak var easyButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor.black
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        //navigationController?.navigationBar.barTintColor = UIColor.black
+        //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.easyButton.applyGradient(colours: [.white, .systemGray2, .black])
+        self.view.applyGradient(colours: [.black, .systemGray4, .white], locations: [0.0, 1.5, 1.0])
 
         // Do any additional setup after loading the view.
     }
@@ -28,5 +34,23 @@ class DifficultyViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+import UIKit
+
+extension UIView {
+    @discardableResult
+    func applyGradient(colours: [UIColor]) -> CAGradientLayer {
+        return self.applyGradient(colours: colours, locations: nil)
+    }
+
+    @discardableResult
+    func applyGradient(colours: [UIColor], locations: [NSNumber]?) -> CAGradientLayer {
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = self.bounds
+        gradient.colors = colours.map { $0.cgColor }
+        gradient.locations = locations
+        self.layer.insertSublayer(gradient, at: 0)
+        return gradient
+    }
 }

@@ -24,6 +24,7 @@
 		C4F94BA7243AA1860034E3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F94BA5243AA1860034E3CA /* LaunchScreen.storyboard */; };
 		C4F94BB2243AA1860034E3CA /* morsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94BB1243AA1860034E3CA /* morsTests.swift */; };
 		C4F94BBD243AA1860034E3CA /* morsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94BBC243AA1860034E3CA /* morsUITests.swift */; };
+		CE101B932456782F003306B0 /* FinalScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE101B922456782F003306B0 /* FinalScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C4F94BB8243AA1860034E3CA /* morsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = morsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F94BBC243AA1860034E3CA /* morsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = morsUITests.swift; sourceTree = "<group>"; };
 		C4F94BBE243AA1860034E3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE101B922456782F003306B0 /* FinalScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				C4A80F09245102F900AA12E7 /* HardViewController.swift */,
 				C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */,
 				A22998082451498A00AB6693 /* GameViewController.swift */,
+				CE101B922456782F003306B0 /* FinalScoreViewController.swift */,
 			);
 			path = mors;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE101B932456782F003306B0 /* FinalScoreViewController.swift in Sources */,
 				C4F94B9F243AA1820034E3CA /* ViewController.swift in Sources */,
 				C4F94B9B243AA1820034E3CA /* AppDelegate.swift in Sources */,
 				C425A5E2244BDFF5001F31A1 /* MorseAPICaller.swift in Sources */,

@@ -16,6 +16,7 @@ class FinalScoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         totalScoreLabel.text = totall
+        
         // Do any additional setup after loading the view.
     }
     

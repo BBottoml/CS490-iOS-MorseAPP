@@ -15,8 +15,21 @@ class GifViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gifImage.loadGif(name: "hexagonMorse")
+        
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onTap(_ sender: UIGestureRecognizer) {
+        performSegue(withIdentifier: "mainSegue2", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+       {
+           if segue.destination is HomeViewController
+           {
+               let vc = segue.destination as? HomeViewController
+           }
+       }
+         
     
 
     /*
@@ -219,7 +232,7 @@ extension UIImage {
             // At it's delay in cs
             let delaySeconds = UIImage.delayForImageAtIndex(Int(index),
                 source: source)
-            delays.append(Int(delaySeconds * 400.0)) // Seconds to ms
+            delays.append(Int(delaySeconds * 500.0)) // Seconds to ms
         }
 
         // Calculate full duration

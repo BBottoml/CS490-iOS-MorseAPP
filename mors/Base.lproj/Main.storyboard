@@ -336,7 +336,7 @@
                         <outlet property="oneHundred" destination="wic-uZ-WV7" id="UPw-hP-XI3"/>
                         <outlet property="score" destination="NDR-W0-enl" id="kbY-SS-yfg"/>
                         <outlet property="submitButton" destination="zht-Nu-95f" id="Qi2-0p-Q2n"/>
-                        <segue destination="6SQ-IU-FD4" kind="showDetail" identifier="scoreSegue" id="dTr-Og-kCz"/>
+                        <segue destination="6SQ-IU-FD4" kind="presentation" identifier="scoreSegue" modalPresentationStyle="fullScreen" id="dTr-Og-kCz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7E-H9-8cb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -348,7 +348,7 @@
             <objects>
                 <viewController title="FinalScoreViewController" id="6SQ-IU-FD4" customClass="FinalScoreViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ndo-kE-jjT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="total score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuf-Qs-puJ">

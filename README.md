@@ -8,6 +8,7 @@
 2. [Unit 10](#Unit-10)
 2. [Unit 11](#Unit-11)
 2. [Unit 12](#Unit-12)
+2. [Unit 13] (#Unit-13)
 
 
 
@@ -154,7 +155,8 @@ Required user stories:
 ## Unit 13 
 Video: 
 
-Remark: You may have to click through in order to access to gif 
+Remark: You may have to click through in order to access to gif
+
 <img src='http://g.recordit.co/BsVQN7KwU2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 

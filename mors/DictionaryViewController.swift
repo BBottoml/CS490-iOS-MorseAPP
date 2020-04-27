@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class DictionaryViewController: UIViewController {
     
@@ -43,6 +44,8 @@ class DictionaryViewController: UIViewController {
         super.viewDidLoad()
         self.labelA.numberOfLines = 0
         self.labelB.numberOfLines = 0
+        self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nN"
+        self.labelB.text = "M\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
         self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM"
         self.labelB.text = "O\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n"
         self.dictTitle.textColor = UIColor.white
@@ -64,21 +67,19 @@ class DictionaryViewController: UIViewController {
     
             labelA.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = ""
+                self.labelA.text = ".-\n-...\n-.-.\n-..\n.\n..-.\n--.\n....\n..\n.---\n-.-\n.-..\n--"
             })
             labelB.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelB.text = ""
+                self.labelB.text = "-.\n---\n.--.\n--.-\n.-.\n...\n-\n..-\n...-\n.--\n-..-\n-.--\n--.."
             })
 
             labelA.fadeIn(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = ".-\n-...\n-.-.\n-..\n.\n..-.\n--.\n....\n..\n.---\n-.-\n.-..\n--"
             })
             
             labelB.fadeIn(completion: {
                 (finished: Bool) -> Void in
-                self.labelB.text = "-.\n---\n.--.\n--.-\n.-.\n...\n-\n..-\n...-\n.--\n-..-\n-.--\n--.."
             })
             
             globalBool = true
@@ -87,22 +88,20 @@ class DictionaryViewController: UIViewController {
 
             labelA.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = ""
+                self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nN"
             })
             
             labelB.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelB.text = ""
+                self.labelB.text = "M\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
             })
 
             labelA.fadeIn(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM"
             })
             
             labelB.fadeIn(completion: {
                 (finished: Bool) -> Void in
-                self.labelB.text = "O\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n"
             })
             globalBool = false
         }
@@ -125,14 +124,18 @@ class DictionaryViewController: UIViewController {
 
 extension UIView {
 
-    func fadeIn(_ duration: TimeInterval = 1.5, delay: TimeInterval = 1, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+    func fadeIn(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        self.alpha = 0.0
+
         UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 1.0
     }, completion: completion)  }
 
-    func fadeOut(_ duration: TimeInterval = 1.5, delay: TimeInterval = 1, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
-            self.alpha = 1.0
+    func fadeOut(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+        self.alpha = 1.0
+        
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseOut, animations: {
+            self.alpha = 0.0
     }, completion: completion)
    }
 }

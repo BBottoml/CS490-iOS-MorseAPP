@@ -46,15 +46,17 @@ class DictionaryViewController: UIViewController {
         self.labelB.numberOfLines = 0
         self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nN"
         self.labelB.text = "M\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
-        self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM"
-        self.labelB.text = "O\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n"
+    
         self.dictTitle.textColor = UIColor.white
         self.lineLine.textColor = UIColor.white
         self.labelA.textColor = UIColor.white
         self.labelB.textColor = UIColor.white
         self.imageView.backgroundColor = UIColor.black
-        navigationController?.navigationBar.barTintColor = UIColor.black
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        self.navigationItem.title = "Dictionary"
+        self.navigationItem.standardAppearance?.backgroundColor = UIColor.black
+        
+        //navigationController?.navigationBar.barTintColor = UIColor.black
+        //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
         // Do any additional setup after loading the view.
     }

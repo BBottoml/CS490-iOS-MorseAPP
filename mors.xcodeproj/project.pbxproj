@@ -12,6 +12,7 @@
 		C4057107243AA84B009798AD /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4057106243AA84B009798AD /* WriteViewController.swift */; };
 		C425A5E2244BDFF5001F31A1 /* MorseAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425A5E1244BDFF5001F31A1 /* MorseAPICaller.swift */; };
 		C47F0D562442366600E83341 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F0D552442366600E83341 /* TutorialViewController.swift */; };
+		C483CB4524568C74009FF1B0 /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */; };
 		C4A80F06245102E500AA12E7 /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A80F05245102E500AA12E7 /* EasyViewController.swift */; };
 		C4A80F08245102F100AA12E7 /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A80F07245102F100AA12E7 /* MediumViewController.swift */; };
 		C4A80F0A245102F900AA12E7 /* HardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A80F09245102F900AA12E7 /* HardViewController.swift */; };
@@ -50,6 +51,7 @@
 		C4057106243AA84B009798AD /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		C425A5E1244BDFF5001F31A1 /* MorseAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseAPICaller.swift; sourceTree = "<group>"; };
 		C47F0D552442366600E83341 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewController.swift; sourceTree = "<group>"; };
 		C4A80F05245102E500AA12E7 /* EasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViewController.swift; sourceTree = "<group>"; };
 		C4A80F07245102F100AA12E7 /* MediumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
 		C4A80F09245102F900AA12E7 /* HardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */,
 				A22998082451498A00AB6693 /* GameViewController.swift */,
 				CE101B922456782F003306B0 /* FinalScoreViewController.swift */,
+				C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */,
 			);
 			path = mors;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				CE101B932456782F003306B0 /* FinalScoreViewController.swift in Sources */,
 				C4F94B9F243AA1820034E3CA /* ViewController.swift in Sources */,
 				C4F94B9B243AA1820034E3CA /* AppDelegate.swift in Sources */,
+				C483CB4524568C74009FF1B0 /* DifficultyViewController.swift in Sources */,
 				C425A5E2244BDFF5001F31A1 /* MorseAPICaller.swift in Sources */,
 				C4A80F0C245119CE00AA12E7 /* DictionaryViewController.swift in Sources */,
 				A22998092451498A00AB6693 /* GameViewController.swift in Sources */,

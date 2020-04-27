@@ -1,36 +1,21 @@
 //
-//  WriteViewController.swift
+//  DifficultyViewController.swift
 //  mors
 //
-//  Created by Bradley Bottomlee on 4/5/20.
+//  Created by Bradley Bottomlee on 4/26/20.
 //  Copyright © 2020 Bradley Bottomlee. All rights reserved.
 //
 
 import UIKit
 
-class WriteViewController: UIViewController {
-    
-    @IBOutlet weak var someTextField: UITextField!
-    @IBOutlet weak var outPutLabel: UILabel!
-    
-    @IBOutlet weak var outputInMorse: UILabel!
-    
+class DifficultyViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor.black
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func submitPrint(_ sender: Any) {
-        let textFieldText: String = someTextField.text!
-        self.outPutLabel.text = textFieldText
-        
-        englishToMorse(content: textFieldText, success: { (morse) in
-            self.outputInMorse.text = morse;
-        })
-        
-        self.someTextField.text = ""
     }
     
 

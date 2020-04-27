@@ -18,8 +18,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBar.barTintColor = UIColor.black
-
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
         let borderAlpha : CGFloat = 0.7
         let cornerRadius : CGFloat = 5.0
 

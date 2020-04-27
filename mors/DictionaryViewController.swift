@@ -7,35 +7,14 @@
 //
 
 import UIKit
+import Foundation
 
 class DictionaryViewController: UIViewController {
     
+    @IBOutlet weak var labelB: UILabel!
     @IBOutlet weak var labelA: UILabel!
     @IBOutlet weak var imageView: UIView!
-    
-    @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
-        labelA.fadeIn()
-        labelA.fadeOut()
-
-
-        
-        if(imageView != nil) {
-        imageView.fadeOut(completion: {
-            (finished: Bool) -> Void in
-            self.imageView.removeFromSuperview()
-        })
-
-        labelA.fadeIn(completion: {
-            (finished: Bool) -> Void in
-            self.labelA.text = ".-"
-        })
-        } else {
-            self.labelA.text = "A"
-            print("no bueno")
-        }
-        
-    }
-    
+    var globalBool = false
     
     
        /* guard sender.view != nil else { return }
@@ -58,9 +37,64 @@ class DictionaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.labelA.numberOfLines = 0
+        self.labelB.numberOfLines = 0
+        self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nN"
+        self.labelB.text = "M\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
+        
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func updateLetters(_ sender: UITapGestureRecognizer) {
+        labelA.fadeIn()
+        labelA.fadeOut()
+        
+        if (globalBool == false) {
+    
+            labelA.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = ".-\n-...\n-.-.\n-..\n.\n..-.\n--.\n....\n..\n.---\n-.-\n.-..\n--"
+            })
+            labelB.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelB.text = "-.\n---\n.--.\n--.-\n.-.\n...\n-\n..-\n...-\n.--\n-..-\n-.--\n--.."
+            })
+
+            labelA.fadeIn(completion: {
+                (finished: Bool) -> Void in
+            })
+            
+            labelB.fadeIn(completion: {
+                (finished: Bool) -> Void in
+            })
+            
+            globalBool = true
+        }
+        else {
+
+            labelA.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nN"
+            })
+            
+            labelB.fadeOut(completion: {
+                (finished: Bool) -> Void in
+                self.labelB.text = "M\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
+            })
+
+            labelA.fadeIn(completion: {
+                (finished: Bool) -> Void in
+            })
+            
+            labelB.fadeIn(completion: {
+                (finished: Bool) -> Void in
+            })
+            globalBool = false
+        }
+        }
+    
+        
+}
     
 
     /*
@@ -73,18 +107,21 @@ class DictionaryViewController: UIViewController {
     }
     */
 
-}
 
 extension UIView {
 
-    func fadeIn(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+    func fadeIn(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+        self.alpha = 0.0
+
         UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 1.0
     }, completion: completion)  }
 
-    func fadeOut(_ duration: TimeInterval = 0.5, delay: TimeInterval = 1.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
-            self.alpha = 0.3
+    func fadeOut(_ duration: TimeInterval = 0.5, delay: TimeInterval = 0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+        self.alpha = 1.0
+        
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseOut, animations: {
+            self.alpha = 0.0
     }, completion: completion)
    }
 }

@@ -39,8 +39,8 @@ class DictionaryViewController: UIViewController {
         super.viewDidLoad()
         self.labelA.numberOfLines = 0
         self.labelB.numberOfLines = 0
-        self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM"
-        self.labelB.text = "O\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n"
+        self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nN"
+        self.labelB.text = "M\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
         
         // Do any additional setup after loading the view.
     }
@@ -74,12 +74,12 @@ class DictionaryViewController: UIViewController {
 
             labelA.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM"
+                self.labelA.text = "A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nN"
             })
             
             labelB.fadeOut(completion: {
                 (finished: Bool) -> Void in
-                self.labelB.text = "O\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n"
+                self.labelB.text = "M\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
             })
 
             labelA.fadeIn(completion: {

@@ -52,8 +52,8 @@ class DictionaryViewController: UIViewController {
         self.labelA.textColor = UIColor.white
         self.labelB.textColor = UIColor.white
         self.imageView.backgroundColor = UIColor.black
-        self.navigationItem.title = "Dictionary"
-        self.navigationItem.standardAppearance?.backgroundColor = UIColor.black
+        //self.navigationItem.title = "Dictionary"
+        //self.navigationItem.standardAppearance?.backgroundColor = UIColor.black
         
         //navigationController?.navigationBar.barTintColor = UIColor.black
         //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]

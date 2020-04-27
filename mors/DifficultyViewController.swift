@@ -17,9 +17,12 @@ class DifficultyViewController: UIViewController {
         super.viewDidLoad()
         //navigationController?.navigationBar.barTintColor = UIColor.black
         //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        /*
         self.easyButton.applyGradient(colours: [.white, .systemGray2, .black])
         self.view.applyGradient(colours: [.black, .systemGray4, .white], locations: [0.0, 1.5, 1.0])
-
+        */
+        
+ 
         // Do any additional setup after loading the view.
     }
     

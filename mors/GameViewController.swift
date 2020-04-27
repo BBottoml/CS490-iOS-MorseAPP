@@ -16,6 +16,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var PhraseLabel: UILabel!
     @IBOutlet weak var EndGameButton: UIButton!
     @IBOutlet weak var TextFieldText: UITextField!
+
+    
     let chars = ["a", "b", "c", "d", "e", "f", "g",
            "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
            "s", "t", "u", "v", "w", "x", "y", "z", "people",
@@ -158,7 +160,20 @@ class GameViewController: UIViewController {
         }
          })
         
+        var score = 0
         func finalScore(){
+            englishToMorse(content: Phrase, success: { (morse) in
+            
+            let trimmed = morse.trimmingCharacters(in: .whitespacesAndNewlines)
+
+            if TextField == trimmed {
+                score += 10
+                }
+            else{
+                score += 0
+                }
+            
+        })
             
         }
         
@@ -176,7 +191,7 @@ class GameViewController: UIViewController {
         
 
         
-   }
+
     
     /*
     // MARK: - Navigation
@@ -188,4 +203,5 @@ class GameViewController: UIViewController {
     }
     */
 
+}
 }

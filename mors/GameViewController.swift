@@ -12,6 +12,7 @@ class GameViewController: UIViewController {
 
     
     
+    @IBOutlet weak var displayCountLabel: UILabel!
     // stuff for total score
     @IBOutlet weak var dashTwo: UILabel!
     @IBOutlet weak var dashOne: UILabel!
@@ -127,8 +128,8 @@ class GameViewController: UIViewController {
         self.dashTwo.isHidden = true
         self.oneHundred.isHidden = true
         self.score.isHidden = true
-        self.totalScoreDash.isHidden = true
-        self.totalScoreLabel.isHidden = true
+//        self.totalScoreDash.isHidden = true
+       // self.totalScoreLabel.isHidden = true
        
         
         PhraseLabel.text = chars.randomElement()!
@@ -138,7 +139,7 @@ class GameViewController: UIViewController {
 
     var counter = 0
     var questionNumber = 0
-
+    var stringCounter = ""
     @IBAction func onSubmit(_ sender: Any) {
         questionNumber+=1
         
@@ -151,6 +152,8 @@ class GameViewController: UIViewController {
 
               if TextField == trimmed {
                   self.counter += 10
+                  print("bueno")
+                self.displayCountLabel.text = String(self.counter)
               }
           
           self.TextFieldText.text = ""
@@ -158,21 +161,28 @@ class GameViewController: UIViewController {
         })
         
         if questionNumber == 10 {
-            self.submitButton.isHidden = true 
-        
+            stringCounter = String(counter)
+            performSegue(withIdentifier: "scoreSegue", sender: self)
+            //self.submitButton.isHidden = true
+            //self.score.text = String(self.counter)
             
-            self.score.text = String(self.counter)
-            
-            self.dashOne.isHidden = false
-            self.dashTwo.isHidden = false
-            self.oneHundred.isHidden = false
-            self.score.isHidden = false
-            self.totalScoreDash.isHidden = false
-            self.totalScoreLabel.isHidden = false
+            //self.dashOne.isHidden = false
+            //self.dashTwo.isHidden = false
+            //self.oneHundred.isHidden = false
+            //self.score.isHidden = false
+            //self.totalScoreDash.isHidden = false
+            //self.totalScoreLabel.isHidden = false
         }
     }
     
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is FinalScoreViewController
+        {
+            let vc = segue.destination as? FinalScoreViewController
+            vc?.totall = self.stringCounter
+        }
+    }
       
            
     
@@ -230,3 +240,5 @@ class GameViewController: UIViewController {
     */
 
 }
+
+

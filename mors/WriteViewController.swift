@@ -17,8 +17,8 @@ class WriteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor.black
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        //navigationController?.navigationBar.barTintColor = UIColor.black
+        //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         // Do any additional setup after loading the view.
     }
     

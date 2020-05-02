@@ -130,8 +130,8 @@ class GameViewController: UIViewController {
         self.score.isHidden = true
 //        self.totalScoreDash.isHidden = true
        // self.totalScoreLabel.isHidden = true
-       navigationController?.navigationBar.barTintColor = UIColor.black
-       navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+      // navigationController?.navigationBar.barTintColor = UIColor.black
+       //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         
         PhraseLabel.text = chars.randomElement()!
       

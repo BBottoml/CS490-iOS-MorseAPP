@@ -7,20 +7,48 @@
 //
 
 import UIKit
+import ImageIO
 
 class DifficultyViewController: UIViewController {
 
     @IBOutlet weak var easyButton: UIButton!
+    @IBOutlet weak var mediumButton: UIButton!
+    @IBOutlet weak var hardButton: UIButton!
+    @IBOutlet weak var gifImage: UIImageView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        gifImage.loadGif(name: "gif2")
         //navigationController?.navigationBar.barTintColor = UIColor.black
         //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-        self.easyButton.applyGradient(colours: [.white, .systemGray2, .black], locations: [0.0, 1.5, 1.0])
-        self.view.applyGradient(colours: [.black, .systemGray4, .white], locations: [0.0, 1.5, 1.0])
+       // self.easyButton.applyGradient(colours: [.white, .systemGray2, .black], locations: [0.0, 1.5, 1.0])
+    // self.view.applyGradient(colours: [.black, .systemGray4, .white], locations: [0.0, 1.5, 1.0])
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
         
- 
+        easyButton.setTitle("Easy", for: UIControl.State.normal)
+        easyButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        easyButton.backgroundColor = UIColor.clear
+        easyButton.layer.borderWidth = 1.0
+        easyButton.layer.borderColor = UIColor(white: 0.0, alpha: borderAlpha).cgColor
+        easyButton.layer.cornerRadius = cornerRadius
+        
+        mediumButton.setTitle("Medium", for: UIControl.State.normal)
+        mediumButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        mediumButton.backgroundColor = UIColor.clear
+        mediumButton.layer.borderWidth = 1.0
+        mediumButton.layer.borderColor = UIColor(white: 0.0, alpha: borderAlpha).cgColor
+        mediumButton.layer.cornerRadius = cornerRadius
+        
+        hardButton.setTitle("Hard", for: UIControl.State.normal)
+        hardButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        hardButton.backgroundColor = UIColor.clear
+        hardButton.layer.borderWidth = 1.0
+        hardButton.layer.borderColor = UIColor(white: 0.0, alpha: borderAlpha).cgColor
+        hardButton.layer.cornerRadius = cornerRadius
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     

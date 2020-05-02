@@ -259,6 +259,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-dJ-2BJ">
+                                <rect key="frame" x="-167" y="-151" width="709" height="969"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty4-21-xR0">
                                 <rect key="frame" x="109" y="439" width="156" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -314,11 +318,14 @@
                     <navigationItem key="navigationItem" title="Difficulty" id="FsJ-IE-tOv"/>
                     <connections>
                         <outlet property="easyButton" destination="vbe-QY-tv4" id="J5h-Xg-rbV"/>
+                        <outlet property="gifImage" destination="Aep-dJ-2BJ" id="BZ5-XF-TTm"/>
+                        <outlet property="hardButton" destination="Ty4-21-xR0" id="lA1-sf-s43"/>
+                        <outlet property="mediumButton" destination="uW3-Wo-91S" id="uKN-CN-OrZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ie-HB-skB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="885"/>
+            <point key="canvasLocation" x="389.60000000000002" y="884.70764617691157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AMs-UQ-aEE">
@@ -680,7 +687,7 @@
             <objects>
                 <viewController id="1Vc-xn-6dW" customClass="EasyViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ayL-1A-m8u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-KT-dxK">
@@ -787,7 +794,7 @@
             <objects>
                 <viewController id="QHz-TS-UQ1" customClass="HardViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="90Y-mh-olN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjb-8q-sW0">
@@ -894,7 +901,7 @@
             <objects>
                 <viewController id="KJz-J6-gNl" customClass="MediumViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DAc-kJ-9ou">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-BP-TH7">
@@ -999,7 +1006,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="gWA-Cc-Hud"/>
-        <segue reference="Za5-fn-Zhu"/>
+        <segue reference="W8w-Z0-JAK"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

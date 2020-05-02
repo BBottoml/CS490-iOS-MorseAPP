@@ -11,7 +11,6 @@
 		C4057105243AA783009798AD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4057104243AA783009798AD /* HomeViewController.swift */; };
 		C4057107243AA84B009798AD /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4057106243AA84B009798AD /* WriteViewController.swift */; };
 		C425A5E2244BDFF5001F31A1 /* MorseAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C425A5E1244BDFF5001F31A1 /* MorseAPICaller.swift */; };
-		C450AFA2245D5E46007643B3 /* gif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = C450AFA1245D5E45007643B3 /* gif2.gif */; };
 		C47F0D562442366600E83341 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47F0D552442366600E83341 /* TutorialViewController.swift */; };
 		C483CB4524568C74009FF1B0 /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */; };
 		C483CB4B2456AB8F009FF1B0 /* hexagonMorse.gif in Resources */ = {isa = PBXBuildFile; fileRef = C483CB4A2456AB8F009FF1B0 /* hexagonMorse.gif */; };
@@ -53,7 +52,6 @@
 		C4057104243AA783009798AD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C4057106243AA84B009798AD /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		C425A5E1244BDFF5001F31A1 /* MorseAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseAPICaller.swift; sourceTree = "<group>"; };
-		C450AFA1245D5E45007643B3 /* gif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = gif2.gif; path = ../../../../../Downloads/gif2.gif; sourceTree = "<group>"; };
 		C47F0D552442366600E83341 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewController.swift; sourceTree = "<group>"; };
 		C483CB4A2456AB8F009FF1B0 /* hexagonMorse.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hexagonMorse.gif; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */,
 				A22998082451498A00AB6693 /* GameViewController.swift */,
 				C483CB4A2456AB8F009FF1B0 /* hexagonMorse.gif */,
-				C450AFA1245D5E45007643B3 /* gif2.gif */,
 				CE101B922456782F003306B0 /* FinalScoreViewController.swift */,
 				C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */,
 				CE101B982456A479003306B0 /* GifViewController.swift */,
@@ -276,7 +273,6 @@
 			files = (
 				C483CB4B2456AB8F009FF1B0 /* hexagonMorse.gif in Resources */,
 				C4F94BA7243AA1860034E3CA /* LaunchScreen.storyboard in Resources */,
-				C450AFA2245D5E46007643B3 /* gif2.gif in Resources */,
 				C4F94BA4243AA1860034E3CA /* Assets.xcassets in Resources */,
 				C4F94BA2243AA1820034E3CA /* Main.storyboard in Resources */,
 			);

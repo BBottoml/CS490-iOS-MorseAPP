@@ -15,8 +15,19 @@ class WriteViewController: UIViewController {
     
     @IBOutlet weak var outputInMorse: UILabel!
     
+    @IBOutlet weak var submitButtonColor: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        submitButtonColor.setTitle("Submit", for: UIControl.State.normal)
+        submitButtonColor.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        submitButtonColor.backgroundColor = UIColor.clear
+        submitButtonColor.layer.borderWidth = 1.0
+        submitButtonColor.layer.borderColor = UIColor(white: 0.0, alpha: borderAlpha).cgColor
+        submitButtonColor.layer.cornerRadius = cornerRadius
         //navigationController?.navigationBar.barTintColor = UIColor.black
         //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         // Do any additional setup after loading the view.

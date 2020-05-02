@@ -311,6 +311,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Button" image="house.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="ap4-99-P7I" kind="presentation" modalPresentationStyle="fullScreen" id="Dve-TZ-v5a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -464,7 +467,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Button" image="house.fill" catalog="system"/>
                                 <connections>
-                                    <segue destination="ap4-99-P7I" kind="show" id="Y0R-HI-vDt"/>
+                                    <segue destination="ap4-99-P7I" kind="presentation" modalPresentationStyle="fullScreen" id="Q1V-ST-d48"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -561,6 +564,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button" image="house.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="UMl-bs-WTC" kind="presentation" modalPresentationStyle="fullScreen" id="Fef-lM-xbG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -678,6 +684,7 @@
                         <outlet property="outPutLabel" destination="lBn-kl-Fqv" id="lOy-aS-e12"/>
                         <outlet property="outputInMorse" destination="TJv-zt-r4Y" id="7gi-Xn-K1q"/>
                         <outlet property="someTextField" destination="Daa-uA-AqA" id="hsC-th-Qa8"/>
+                        <outlet property="submitButtonColor" destination="uBc-f0-vAu" id="R7t-kU-UTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJV-Xa-Q3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1025,6 +1032,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="LhE-p0-pcd"/>
+        <segue reference="Fef-lM-xbG"/>
+        <segue reference="Q1V-ST-d48"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

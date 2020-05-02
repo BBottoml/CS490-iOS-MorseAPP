@@ -18,7 +18,7 @@ class DifficultyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gifImage.loadGif(name: "gif2")
+        //gifImage.loadGif(name: "gif2")
         //navigationController?.navigationBar.barTintColor = UIColor.black
         //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
        // self.easyButton.applyGradient(colours: [.white, .systemGray2, .black], locations: [0.0, 1.5, 1.0])

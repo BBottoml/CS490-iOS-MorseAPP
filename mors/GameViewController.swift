@@ -123,6 +123,16 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 5.0
+        
+        submitButton.setTitle("Submit", for: UIControl.State.normal)
+        submitButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        submitButton.backgroundColor = UIColor.clear
+        submitButton.layer.borderWidth = 1.0
+        submitButton.layer.borderColor = UIColor(white: 0.0, alpha: borderAlpha).cgColor
+        submitButton.layer.cornerRadius = cornerRadius
+
         // Do any additional setup after loading the view.
         self.dashOne.isHidden = true
         self.dashTwo.isHidden = true

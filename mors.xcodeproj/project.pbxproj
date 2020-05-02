@@ -28,6 +28,7 @@
 		C4F94BBD243AA1860034E3CA /* morsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F94BBC243AA1860034E3CA /* morsUITests.swift */; };
 		CE101B932456782F003306B0 /* FinalScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE101B922456782F003306B0 /* FinalScoreViewController.swift */; };
 		CE101B992456A479003306B0 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE101B982456A479003306B0 /* GifViewController.swift */; };
+		CE101B9F245D6BCE003306B0 /* circle.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE101B9E245D6BCE003306B0 /* circle.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		C4F94BBE243AA1860034E3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE101B922456782F003306B0 /* FinalScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalScoreViewController.swift; sourceTree = "<group>"; };
 		CE101B982456A479003306B0 /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		CE101B9E245D6BCE003306B0 /* circle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = circle.gif; path = ../../circle.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				C4A80F0B245119CE00AA12E7 /* DictionaryViewController.swift */,
 				A22998082451498A00AB6693 /* GameViewController.swift */,
 				C483CB4A2456AB8F009FF1B0 /* hexagonMorse.gif */,
+				CE101B9E245D6BCE003306B0 /* circle.gif */,
 				CE101B922456782F003306B0 /* FinalScoreViewController.swift */,
 				C483CB4424568C74009FF1B0 /* DifficultyViewController.swift */,
 				CE101B982456A479003306B0 /* GifViewController.swift */,
@@ -273,6 +276,7 @@
 			files = (
 				C483CB4B2456AB8F009FF1B0 /* hexagonMorse.gif in Resources */,
 				C4F94BA7243AA1860034E3CA /* LaunchScreen.storyboard in Resources */,
+				CE101B9F245D6BCE003306B0 /* circle.gif in Resources */,
 				C4F94BA4243AA1860034E3CA /* Assets.xcassets in Resources */,
 				C4F94BA2243AA1820034E3CA /* Main.storyboard in Resources */,
 			);

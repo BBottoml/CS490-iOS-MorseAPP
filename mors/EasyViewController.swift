@@ -34,7 +34,7 @@ class EasyViewController: UIViewController {
         submitButton.layer.borderColor = UIColor(white: 0.0, alpha: borderAlpha).cgColor
         submitButton.layer.cornerRadius = cornerRadius
         
-        nextButton.setTitle("Submit", for: UIControl.State.normal)
+        nextButton.setTitle("Next", for: UIControl.State.normal)
         nextButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
         nextButton.backgroundColor = UIColor.clear
         nextButton.layer.borderWidth = 1.0

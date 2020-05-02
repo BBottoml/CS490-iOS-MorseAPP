@@ -20,7 +20,7 @@ class DifficultyViewController: UIViewController {
         super.viewDidLoad()
         gifImage.loadGif(name: "circle")
         //navigationController?.navigationBar.barTintColor = UIColor.black
-        //navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
        // self.easyButton.applyGradient(colours: [.white, .systemGray2, .black], locations: [0.0, 1.5, 1.0])
     // self.view.applyGradient(colours: [.black, .systemGray4, .white], locations: [0.0, 1.5, 1.0])
         let borderAlpha : CGFloat = 0.7

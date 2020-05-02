@@ -347,7 +347,7 @@
             </objects>
             <point key="canvasLocation" x="2137" y="956"/>
         </scene>
-        <!--Game-->
+        <!--Game View Controller-->
         <scene sceneID="CL7-Fd-SmG">
             <objects>
                 <viewController id="UMl-bs-WTC" customClass="GameViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
@@ -474,7 +474,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="uEr-2z-q34"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Game" id="t4n-MY-3Lt"/>
+                    <navigationItem key="navigationItem" id="t4n-MY-3Lt"/>
                     <connections>
                         <outlet property="PhraseLabel" destination="stm-Gj-C0w" id="oer-f7-5kj"/>
                         <outlet property="TextFieldText" destination="j0w-sS-o9P" id="i5f-OP-p5o"/>
@@ -581,7 +581,7 @@
             </objects>
             <point key="canvasLocation" x="4436" y="955.77211394302856"/>
         </scene>
-        <!--Translate-->
+        <!--Write View Controller-->
         <scene sceneID="lNe-W0-bh3">
             <objects>
                 <viewController id="El4-kX-pXC" customClass="WriteViewController" customModule="mors" customModuleProvider="target" sceneMemberID="viewController">
@@ -679,7 +679,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="83I-NN-NKy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Translate" id="IZo-ec-iLm"/>
+                    <navigationItem key="navigationItem" id="IZo-ec-iLm"/>
                     <connections>
                         <outlet property="outPutLabel" destination="lBn-kl-Fqv" id="lOy-aS-e12"/>
                         <outlet property="outputInMorse" destination="TJv-zt-r4Y" id="7gi-Xn-K1q"/>
@@ -1031,8 +1031,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Fef-lM-xbG"/>
-        <segue reference="LhE-p0-pcd"/>
+        <segue reference="9Ao-xA-71N"/>
+        <segue reference="Q1V-ST-d48"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>

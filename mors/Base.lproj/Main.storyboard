@@ -1031,9 +1031,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LhE-p0-pcd"/>
         <segue reference="Fef-lM-xbG"/>
-        <segue reference="Q1V-ST-d48"/>
+        <segue reference="Dve-TZ-v5a"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
